@@ -1,12 +1,35 @@
 import Vue from 'vue'
+import upperFirst from 'lodash/upperFirst'
+import camelCase from 'lodash/camelCase'
 import App from './App.vue'
-import router from './router' // Import our router.js -> This is to navitage in different pages in our app
+import router from './router'
 import store from './store'
 
-Vue.config.productionTip = false
+/*
+params: 
+were to look for the components,
+does it include submodules?,
+Regex to convert component name to PascalCase
+*/
+const requireComponent = require.context(
+  './components',
+  false,
+  /Base[A-Z]\w+\.(vue|js)$/
+)
+
+// Iteration through each component
+requireComponent.keys().forEach(fileName => {
+  const componentConfig = requireComponent(fileName)
+
+  const componentName = upperFirst(
+    camelCase(fileName.replace(/^\.\/(.*)\.\w+$/, '$1'))
+  )
+
+  Vue.component(componentName, componentConfig.default || componentConfig)
+})
 
 new Vue({
-  router, // ES6 equivalent to router: router
+  router,
   store,
   render: h => h(App)
 }).$mount('#app')
