@@ -5,7 +5,7 @@ import EventList from '../views/EventList.vue'
 import EventShow from '../views/EventShow.vue'
 
 Vue.use(VueRouter)
-
+const mode = 'history'
 const routes = [
   {
     path: '/',
@@ -13,9 +13,10 @@ const routes = [
     component: EventList
   },
   {
-    path: '/event',
+    path: '/event/:id', // dynamic segment
     name: 'event-show',
-    component: EventShow
+    component: EventShow,
+    props: true // Sending parameter via props
   },
   {
     path: '/event/create',
@@ -25,6 +26,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  mode,
   routes
 })
 

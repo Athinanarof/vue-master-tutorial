@@ -2,8 +2,7 @@
   <div id="app">
     <div id="nav">
       <!-- component to create a link -->
-      <router-link :to="{ name: 'event-list' }">List</router-link>
-      <router-link :to="{ name: 'event-show' }">Show event #1</router-link>
+      <router-link :to="{ name: 'event-list' }">List</router-link>&nbsp;|&nbsp;
       <router-link :to="{ name: 'event-create' }">Create Event</router-link>
     </div>
     <!-- Here it will be render the component -->
