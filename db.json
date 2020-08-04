@@ -71,6 +71,92 @@
           "name": "Mary Gordon"
         }
       ]
+    },
+    {
+      "isTrusted": true,
+      "id": 4
+    },
+    {
+      "isTrusted": true,
+      "id": 5
+    },
+    {
+      "isTrusted": true,
+      "id": 6
+    },
+    {
+      "isTrusted": true,
+      "id": 7
+    },
+    {
+      "isTrusted": true,
+      "id": 8
+    },
+    {
+      "isTrusted": true,
+      "id": 9
+    },
+    {
+      "isTrusted": true,
+      "id": 10
+    },
+    {
+      "isTrusted": true,
+      "id": 11
+    },
+    {
+      "isTrusted": true,
+      "id": 12
+    },
+    {
+      "isTrusted": true,
+      "id": 13
+    },
+    {
+      "isTrusted": true,
+      "id": 14
+    },
+    {
+      "id": 5858550,
+      "category": "food",
+      "organizer": {
+        "id": 1,
+        "name": "Araceli Sanchez"
+      },
+      "title": "Araceli's Party",
+      "description": "First food party",
+      "location": "Tijuana",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 9398038,
+      "category": "education",
+      "organizer": {
+        "id": 1,
+        "name": "Araceli Sanchez"
+      },
+      "title": "Studying vuex",
+      "description": "Here waiting for my next offer",
+      "location": "Tijuana",
+      "date": "2020-08-31T22:27:00.000Z",
+      "time": "12:00",
+      "attendees": []
+    },
+    {
+      "id": 2118783,
+      "category": "community",
+      "organizer": {
+        "id": 1,
+        "name": "Araceli Sanchez"
+      },
+      "title": "Planting Trees",
+      "description": "We are so cool that we plant cool trees",
+      "location": "The happiest place in the world",
+      "date": "2020-08-05T22:34:00.000Z",
+      "time": "15:00",
+      "attendees": []
     }
   ]
 }

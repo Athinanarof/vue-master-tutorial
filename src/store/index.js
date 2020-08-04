@@ -1,38 +1,36 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import EventService from '@/services/EventService.js'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
     user: { id: 1, name: 'Araceli Sanchez' },
     categories: ['sustainability', 'education', 'food', 'community'],
-    todos: [
-      { id: 1, text: 'abc', done: false },
-      { id: 2, text: 'def', done: false },
-      { id: 3, text: 'ghi', done: false },
-      { id: 4, text: 'jkl', done: true },
-      { id: 5, text: 'mnn', done: true }
-    ]
+    events: []
   },
-  mutations: {},
-  actions: {},
+
+  // Actions wrap business logic for the mutations
+  actions: {
+    // commit comes from the context object -> all the information of Store
+    createEvent({ commit }, event) {
+      return EventService.postEvent(event).then(() => {
+        commit('ADD_EVENT', event)
+      })
+    }
+  },
   modules: {},
+  // mutations/update of state
+  // Write them down in UPPERCASE to make a distinction between calling an Action o a Mutation (also it is because in FLUX are written like that)  mutations: {},
+  mutations: {
+    // event -> new payload
+    ADD_EVENT(state, event) {
+      state.events.push(event)
+    }
+  },
   getters: {
-    // This is in case we want to access to this value from multiple values in our app
-    catLength: state => {
-      return state.categories.length
-    },
-    doneTodos: state => {
-      return state.todos.filter(todo => todo.done)
-    },
-    // Getter inside of getter
-    activeTodos: (state, getters) => {
-      return state.todos.length - getters.doneTodos.length
-    },
-    // Getter using parameter id
-    getTodoById: state => id => {
-      return state.todos.find(event => event.id === id)
+    getEventById: state => id => {
+      return state.events.find(event => event.id === id)
     }
   }
 })
