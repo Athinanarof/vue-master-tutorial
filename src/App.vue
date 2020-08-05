@@ -2,7 +2,8 @@
   <div id="app">
     <NavBar />
     <!-- Here it will be render the component -->
-    <router-view />
+    <!-- Reloads components when url changes -->
+    <router-view :key="$route.fullPath" />
   </div>
 </template>
 

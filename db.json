@@ -73,89 +73,163 @@
       ]
     },
     {
-      "isTrusted": true,
-      "id": 4
+      "id": 4,
+      "title": "Disco Party",
+      "date": "Aug 28 2018",
+      "time": "10:00",
+      "location": "Daytona Beach",
+      "description": "Let's clean up this beach.",
+      "organizer": "Adam Jahr",
+      "category": "sustainability",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "Adam Jahr"
+        },
+        {
+          "id": "def456",
+          "name": "Gregg Pollack"
+        },
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
     },
     {
-      "isTrusted": true,
-      "id": 5
-    },
-    {
-      "isTrusted": true,
-      "id": 6
-    },
-    {
-      "isTrusted": true,
-      "id": 7
-    },
-    {
-      "isTrusted": true,
-      "id": 8
-    },
-    {
-      "isTrusted": true,
-      "id": 9
-    },
-    {
-      "isTrusted": true,
-      "id": 10
-    },
-    {
-      "isTrusted": true,
-      "id": 11
-    },
-    {
-      "isTrusted": true,
-      "id": 12
-    },
-    {
-      "isTrusted": true,
-      "id": 13
-    },
-    {
-      "isTrusted": true,
-      "id": 14
-    },
-    {
-      "id": 5858550,
-      "category": "food",
-      "organizer": {
-        "id": 1,
-        "name": "Araceli Sanchez"
-      },
-      "title": "Araceli's Party",
-      "description": "First food party",
-      "location": "Tijuana",
-      "date": "",
-      "time": "",
-      "attendees": []
-    },
-    {
-      "id": 9398038,
-      "category": "education",
-      "organizer": {
-        "id": 1,
-        "name": "Araceli Sanchez"
-      },
-      "title": "Studying vuex",
-      "description": "Here waiting for my next offer",
-      "location": "Tijuana",
-      "date": "2020-08-31T22:27:00.000Z",
+      "id": 5,
+      "title": "Vue Users Group",
+      "date": "Nov 12 2018",
       "time": "12:00",
-      "attendees": []
+      "location": "132 N Magnolia Street, Orlando, Florida",
+      "description": "We're going to clean up this park.",
+      "organizer": "Adam Jahr",
+      "category": "nature",
+      "attendees": [
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
     },
     {
-      "id": 2118783,
-      "category": "community",
+      "id": 6,
+      "title": "Orlando Dev Meetup",
+      "date": "Dec 2 2018",
+      "time": "12:00",
+      "location": "132 N Magnolia Street, Orlando, Florida",
+      "description": "Help animals find new homes.",
+      "organizer": "Gregg Pollack",
+      "category": "animal welfare",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "Adam Jahr"
+        },
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Yoga Class",
+      "date": "Aug 28 2018",
+      "time": "10:00",
+      "location": "Daytona Beach",
+      "description": "Let's clean up this beach.",
+      "organizer": "Adam Jahr",
+      "category": "sustainability",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "Adam Jahr"
+        },
+        {
+          "id": "def456",
+          "name": "Gregg Pollack"
+        },
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Breathing Meditation",
+      "date": "Nov 12 2018",
+      "time": "12:00",
+      "location": "132 N Magnolia Street, Orlando, Florida",
+      "description": "We're going to clean up this park.",
+      "organizer": "Adam Jahr",
+      "category": "nature",
+      "attendees": [
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Dancing Class",
+      "date": "Dec 2 2018",
+      "time": "12:00",
+      "location": "132 N Magnolia Street, Orlando, Florida",
+      "description": "Help animals find new homes.",
+      "organizer": "Gregg Pollack",
+      "category": "animal welfare",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "Adam Jahr"
+        },
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "category": "animal welfare",
       "organizer": {
-        "id": 1,
-        "name": "Araceli Sanchez"
+        "user": {
+          "id": "abc123",
+          "name": "Adam Jahr"
+        }
       },
-      "title": "Planting Trees",
-      "description": "We are so cool that we plant cool trees",
-      "location": "The happiest place in the world",
-      "date": "2020-08-05T22:34:00.000Z",
-      "time": "15:00",
+      "title": "Gregg's Event",
+      "description": "We'll do stuff",
+      "location": "Your House",
+      "date": "",
+      "time": "5:00",
       "attendees": []
     }
   ]

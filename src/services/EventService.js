@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // A single axios instance for the entire app
-const apliClient = axios.create({
+const apiClient = axios.create({
   baseURL: 'http://localhost:3000',
   withCredentials: false,
   // For authentication and configuration
@@ -12,13 +12,13 @@ const apliClient = axios.create({
 })
 
 export default {
-  getEvents() {
-    return apliClient.get('/events')
+  getEvents(perPage, page) {
+    return apiClient.get('/events?_limit=' + perPage + '&_page=' + page)
   },
   getEvent(id) {
-    return apliClient.get('/events/' + id)
+    return apiClient.get('/events/' + id)
   },
   postEvent(event) {
-    return apliClient.post('/events', event)
+    return apiClient.post('/events', event)
   }
 }
