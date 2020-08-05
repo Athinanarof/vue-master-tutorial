@@ -1,7 +1,6 @@
 <template>
   <div id="nav" class="nav">
-    <router-link to="/" class="brand">Real World Events</router-link
-    >&nbsp;|&nbsp;
+    <router-link to="/" class="brand">Real World Events</router-link>
     <nav>
       <!-- component to create a link -->
       <router-link :to="{ name: 'event-list' }">List</router-link>&nbsp;|&nbsp;
